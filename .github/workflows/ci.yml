@@ -6,6 +6,7 @@ on:
 
 jobs:
   build:
+    name: CI/CD Build
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -13,4 +14,4 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: build application
-        run: docker-compose -f docker-compose.yml --env-file ./.env.dev up d
+        run: docker compose -f docker-compose.yml build
