@@ -1,0 +1,16 @@
+instance/
+env/
+venv/
+media/
+__pycache__/
+.pytest_cache/
+*.env
+*.egg_info
+*.idea
+*.log
+*.pot
+*.pyc
+*/alembic.ini
+*/alembic/env.py
+*/alembic/script.py.mako
+*/alembic/README
